@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>DOOM Fire</title>
+  </head>
+  <body>
+    <main>
+      <section id="mainContent">
+        <section id="titleArea">
+          <h1 id="title">DOOM Fire</h1>
+        </section>
+
+        <section id="fire">
+          <div id="fireCanvas"></div>
+        </section>
+        <section id="buttons">
+          <div id="slideContainer">
+            <input
+              type="range"
+              min="0"
+              max="36"
+              value="36"
+              class="slider"
+              id="fireSlider"
+              name="Fire Intensity"
+            />
+          </div>
+          <section id="smallButtons">
+            <button id="diminuir" class="button">
+              <img src="../images/svg/bx-minus.svg" alt="Diminuir fogo" />
+            </button>
+            <button id="aumentar" class="button">
+              <img src="../images/svg/bx-plus.svg" alt="Aumentar fogo" />
+            </button>
+          </section>
+          <section id="bigButtons">
+            <section class="row">
+              <button id="onOff" class="button">
+                <img
+                  src="../images/svg/bx-power-off.svg"
+                  alt="Liga e desliga fogo"
+                />
+              </button>
+            </section>
+            <section class="row">
+              <button id="debug" class="button">
+                <img src="../images/svg/bxs-bug.svg" alt="Mode de debug" />
+              </button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="fire.js"></script>
+  </body>
+</html>
